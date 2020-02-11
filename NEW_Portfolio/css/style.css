@@ -1,0 +1,98 @@
+@font-face {
+		font-family: Pacifico-Regular;
+		src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+			font-family: Indie_Flower;
+			src: url(../fonts/IndieFlower-Regular.ttf);
+}
+
+.background  {
+	background-image: url("../images/background.jpg") !important;
+	background-repeat: no-repeat;
+}
+
+.background{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.photo {
+	width: 20%;
+	height: 20%;
+	border-radius: 20px;
+	padding-left: 10px;
+	float: left;
+	margin-bottom: 5%;
+}
+
+.container {
+	clear: both;
+}
+
+.AboutMe {
+	font-family: Indie_Flower;
+	color: #6a07db;
+}
+
+.hederSkils {
+		color: #6a07db;
+}
+
+h4 {
+		color: #05ad38;
+}
+
+.nav-link {
+		font-family: Pacifico-Regular;
+		font-size: 20px;
+		margin-right: 10px;
+}
+
+h2 {
+		color: #6a07db;
+}
+
+.Menu {
+	/* background: linear-gradient(to bottom, #1e5799 0%,#207cca 22%,#207cca 36%,#2989d8 50%,#207cca 62%,#207cca 69%,#207cca 87%,#7db9e8 100%); */
+		  background: url("../images/nav-fon.jpg") !important;
+}
+
+.skils {
+	width: 30%;
+	height: 70%;
+}
+
+.skils:hover {
+	-webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+p {
+	font-size: 25px;
+	text-indent: 22px;
+	font-family: Indie_Flower;
+	margin-left: 22%;
+	color: #05ad38;
+}
+
+h5 {
+	font-family: Indie_Flower;
+}
+
+h2.AboutMe {
+	font-size: 42px;
+	margin-bottom: 2%;
+}
+
+.contacts {
+	margin-left: 11%;
+
+}
+
+footer {
+	background: url("../images/footer.svg") !important;
+	color: green !important;
+}

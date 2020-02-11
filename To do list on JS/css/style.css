@@ -1,0 +1,155 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,0.1);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* ------------ container ------------ */
+.container{
+    padding:10px;
+    width:402px;
+    margin:0 auto;
+}
+
+/* ------------ header ------------ */
+.header{
+    width: 380px;
+    height:200px;
+    background-image: url('../img/bg2.jpg');
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+.clear{
+    width : 65px;
+    height: 65px;
+    position: absolute;
+    right:20px;
+    top: 20px;
+}
+.clear button{
+    font-size: 14px;
+    color: blue;
+}
+
+#date{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: blue;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* ------------ content ------------ */
+.content{
+    width:380px;
+    height: 350px;
+    max-height:350px;
+    background-color: #4162f6;
+    overflow: auto;
+}
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+.content ul{
+    padding:0;
+    margin:0;
+}
+
+.checkTask {
+    margin-left: 15px;
+    margin-top: 13px;
+}
+
+.uncheckTask {
+    margin-left: 15px;
+    margin-top: 13px;
+}
+
+.item{
+    width:380px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 3px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: blue;
+    color: black;
+    border-radius: 9px;
+}
+
+/*delete button*/
+.item button{
+    text-align: left;
+    padding-top: 2px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 7px;
+    width: 35px;
+    height: 30px;
+}
+.item button:hover{
+    cursor: pointer;
+}
+
+.lineThrough{
+    text-decoration: line-through crimson;
+    font-size: 20px;
+}
+
+/* ------------ add item ------------ */
+.add-to-do{
+    position: absolute;
+    width: 380px;
+    height:80px;
+    background-color: #4162f6;
+    padding: 10px;
+    font-size: 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.add-to-do input{
+    position: center;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    border: 2px solid blue;
+    font-size: 20px;
+    padding-left:10px;
+    margin-bottom: 500px;
+    margin-left: 50px;
+    margin-top: -45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
