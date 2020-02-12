@@ -1,0 +1,84 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("background_image.jpg");
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: darkblue;
+  height: 100%;
+  display: flex;
+  width: 90%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  margin-left: 50px;
+  margin-right: 60px;
+}
+
+/************************/
+
+.todo {
+  margin: auto;
+  //background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 15px;
+  background-image: linear-gradient(to right, green, white);
+
+  .title {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .tasks {
+    list-style: none;
+    padding: 0;
+    background: cornflowerblue;
+  }
+
+  li:hover{
+    background-color: chocolate;
+    cursor: pointer;
+    transition: width 1s;
+    transform: scale(1.1);
+  }
+
+  .complete{
+    color: red;
+    text-decoration:line-through;
+  }
+
+  .save{
+    margin-right: 100px;
+  }
+
+  .show{
+    margin-left: 110px;
+  }
+
+  .modal-enter-active{
+    transition: all .5s;
+  }
+  .modal-enter{
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+}
