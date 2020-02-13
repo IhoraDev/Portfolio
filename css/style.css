@@ -51,7 +51,7 @@ h4 {
 }
 
 h2 {
-		color: #6a07db;
+		color: black;
 }
 
 .Menu {
@@ -87,9 +87,8 @@ h2.AboutMe {
 	margin-bottom: 2%;
 }
 
-.contacts {
-	margin-left: 11%;
-
+.container a {
+	margin-left: 10%;
 }
 
 footer {
