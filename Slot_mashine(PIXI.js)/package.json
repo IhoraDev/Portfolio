@@ -1,0 +1,42 @@
+{
+  "name": "test_task",
+  "version": "1.0.0",
+  "author": "IhoraDev",
+  "description": "Test task for 'TwinWinGames'",
+  "private": true,
+  "scripts": {
+    "run": "gulp dev",
+    "deploy": "gulp build",
+    "test": "babel-node spec/run.js"
+  },
+  "dependencies": {
+    "@pixi/filter-color-replace": "^3.0.3",
+    "bootstrap": "^4.1.3",
+    "eventemitter3": "^4.0.0",
+    "jquery": "^3.3.1",
+    "jquery-ui": "^1.12.1",
+    "k8w-pixi-tween": "^0.7.6",
+    "pixi.js": "^5.0.4",
+    "popper.js": "^1.14.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "browser-sync": "^2.26.5",
+    "del": "^4.1.1",
+    "gulp": "^4.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "jasmine": "^3.4.0",
+    "jasmine-snapshot": "^1.8.1"
+  },
+  "main": "gulpfile.js",
+  "keywords": []
+}
