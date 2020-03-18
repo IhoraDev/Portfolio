@@ -2,8 +2,8 @@ class GameController extends PIXI.Sprite {
     constructor() {
         super();
         this.columnPadding = 5;
-        this.turnWidth = 170;
-        this.x = 240;
+        this.turnWidth = 180;
+        this.x = 220;
         this.y = 105;
         this.turns = [];
 

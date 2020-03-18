@@ -1,8 +1,8 @@
 class Turn extends PIXI.Sprite {
     constructor() {
         super();
-        this.reelPadding = 3;
-        this.reelHeignt = 140;
+        this.reelPadding = 10;
+        this.reelHeignt = 120;
         this.cached = {};
         this.deloyPositionY = 4 * (this.reelHeignt + this.reelPadding);
 
@@ -10,8 +10,13 @@ class Turn extends PIXI.Sprite {
         this.tweenContainer = new PIXI.Sprite();
 
         this.tweenReelContainer = null;
-        this.reels = Array.from({ length: 13 },
-            () => new Reel(this.shuffleReelId()));
+        this.reels = Array.from({
+                length: 13
+            },
+            () =>
+                new Reel(
+                    this.shuffleReelId()
+                ));
 
         this.createReelContainer();
         this.addReels();
@@ -43,7 +48,6 @@ class Turn extends PIXI.Sprite {
         this.tweenReelContainer.to({
             y: positiionY
         });
-        // this.tweenReelContainer.easing = PIXI.tween.Easing.inOutBounce();
         this.tweenReelContainer.easing = PIXI.tween.Easing.outQuint();
         this.tweenReelContainer.time = 780;
         this.tweenReelContainer.on('start', () => {});

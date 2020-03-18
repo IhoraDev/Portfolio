@@ -28,10 +28,13 @@ const load = () => {
     let app = new App();
 
     let renderer = PIXI.autoDetectRenderer({
-        backgroundColor: 0xf0f0f0,
-        width: 1920,
-        height: 999
+          width: window.innerWidth,
+          height: window.innerHeight,
+          antialias: true,
+          transparent: false,
+          resolution: 1
     });
+
     document.body.appendChild(renderer.view);
     requestAnimationFrame(animate);
 
