@@ -9,7 +9,7 @@ import * as actionCreators from '../../store/actions';
 class Pokemons extends Component {
 
     componentDidMount() {
-        this.props.getPokemons(this.props.url)
+        this.props.getPokemons(this.props.url);
         this.props.getTypes(this.props.typeUrl)
     }
 
@@ -67,7 +67,6 @@ const mapStateToProps = ({
 
 const mapDispatchToProps = dispatch => {
     return {
-        sortBy: type => dispatch(actionCreators.sort(type)),
         getPokemons: url => dispatch(actionCreators.get_pokemon(url)),
         showPokemonInfo: (pokemonInfo) => dispatch(actionCreators.show_pokemon_info(pokemonInfo)),
         getTypes: url => dispatch(actionCreators.get_all_types(url))

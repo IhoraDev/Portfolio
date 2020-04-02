@@ -14,6 +14,7 @@ class PokemonFullInfo extends React.Component {
     
     const { name, id, stats, weight, moves, types } = pokemon;
 
+    //get pokemon property from incoming array, and set as we want
     const formatedInfo = [
       {'Attack': stats[4].base_stat},
       {'Defense': stats[3].base_stat},
@@ -29,7 +30,11 @@ class PokemonFullInfo extends React.Component {
       <div className={`PokemonFullInfo_Wrap_Gradient PokemonFullInfo_Wrap_Gradient--${types[0].type.name}`} onClick={this.props.close}>
         <div className='PokemonFullInfo_Wrap'>
           <div className='Image'>
-            <img src={pokemon.sprites.front_default} alt={pokemon.sprites.front_default} onLoad={this.onLoad}/> 
+            <img
+                src={pokemon.sprites.front_default}
+                alt={pokemon.sprites.front_default}
+                onLoad={this.onLoad}
+            />
           </div>
           <div className='Info'>
             <h3 className='Title'>{name} #{id}</h3>

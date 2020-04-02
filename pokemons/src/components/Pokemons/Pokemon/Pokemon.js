@@ -18,7 +18,10 @@ class Pokemon extends React.Component {
 
     (async () => {
       const pokemonInfo = await getPokemonInfo(this.props.url);
-      this.setState({pokemonInfo: pokemonInfo, didLoad: true})
+      this.setState({
+        pokemonInfo: pokemonInfo,
+        didLoad: true
+      })
     })();
   }
 
@@ -36,10 +39,16 @@ class Pokemon extends React.Component {
 
       return (
         <div className={`card card--${types[0].type.name}`}>
+
           <div className={Style.PokemonWrap} onClick={this.onClickHandler}>
+
             <div className={Style.Image}>
               { !this.state.didLoad ? <Loader /> : null } 
-              <img src={front_default} alt={front_default} onLoad={this.onLoad}/> 
+              <img
+                  src={front_default}
+                  alt={front_default}
+                  onLoad={this.onLoad}
+              />
             </div>   
 
             <h4 className={Style.PokemonName}>{name}</h4>
@@ -47,7 +56,12 @@ class Pokemon extends React.Component {
             <div className={Style.Types}>
               { types.map(type => {
                 return (
-                    <div key={type.type.name} className={`type ${type.type.name}`}>{type.type.name}</div>
+                    <div
+                        key={type.type.name}
+                        className={`type ${type.type.name}`}
+                    >
+                      {type.type.name}
+                    </div>
                 )
               })}
             </div>
