@@ -9,4 +9,4 @@ In app:
   - click on full info to close;
   
   - adaptive styling;
-  - pokemons will sorted when they loaded (as i understand from task);
+  - pokemons will sorted when they loaded;

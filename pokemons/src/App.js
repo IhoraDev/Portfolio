@@ -4,9 +4,9 @@ import Layout from './hoc/Layout'
 class App extends Component {
   render(){
     return (
-      <Fragment>
-        <Layout />
-      </Fragment>
+        <Fragment>
+           <Layout />
+        </Fragment>
     );
   }
 }
